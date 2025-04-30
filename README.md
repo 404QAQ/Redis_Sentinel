@@ -278,20 +278,4 @@ docker logs redis-sentinel-1
      redis-cli -h <机器B_IP> -p $port SENTINEL masters
    done
    ```
-
-## 目录结构
-
-```
-.
-├── docker-compose-a.yml     # 机器A的Docker Compose配置
-├── docker-compose-b.yml     # 机器B的Docker Compose配置
-├── config/                  # 配置文件目录
-│   ├── master.conf         # Redis主节点配置
-│   ├── replica.conf        # Redis从节点配置
-│   ├── sentinel1.conf      # 机器A的Sentinel配置
-│   ├── sentinel2.conf      # 机器B的Sentinel1配置
-│   └── sentinel3.conf      # 机器B的Sentinel2配置
-└── data/                   # 数据持久化目录
-    ├── master/            # 主节点数据
-    └── replica/           # 从节点数据
-``` 
+   ##
